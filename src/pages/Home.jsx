@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <section>
       <div className="flex items-center">
-        <div className="mr-10">
+        <div className="mr-10 cursor-pointer hover:scale-105 duration-300">
           <img src={ProfilePic} alt="" width={300} />
         </div>
         <div className="">

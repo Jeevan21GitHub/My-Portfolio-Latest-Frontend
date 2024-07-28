@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { navBarData } from "../data/NavbarData";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -6,6 +6,9 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
+    const [menuName,setMenuName]=useState("Home")
+    
+    // console.log(menuName);
   return (
     <>
       <div className="flex flex-col justify-between h-2/3">
@@ -19,8 +22,8 @@ const SideBar = () => {
             <Link to={menu}>
               <h3
                 key={index}
-                className="font-semibold shadow-md rounded border-2 border-gray-800 mb-3 p-2 text-center hover:bg-blue-400 hover:text-white hover:translate-x-2 duration-300"
-              >
+                className={`${menu===menuName?"bg-blue-400 text-white translate-x-10":"bg-white"} font-semibold shadow-md rounded border-2 border-gray-800 mb-3 p-2 text-center hover:bg-blue-400 hover:text-white hover:translate-x-2 duration-300`}
+                onClick={()=>setMenuName(menu)}>
                 {menu}
               </h3>
             </Link>

@@ -1,1 +1,1 @@
-export const navBarData=["Home","About","Skills","Work","Achievements","Contact"]
+export const navBarData=["Home","Skills","Projects","Achievements","About","Contact"]
