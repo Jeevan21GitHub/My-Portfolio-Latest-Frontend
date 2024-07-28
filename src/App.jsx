@@ -5,6 +5,7 @@ import { Navigate, Route,Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Skills from './pages/Skills'
+import ProgrammingLanguages from './skillPages/ProgrammingLanguages'
 const App = () => {
   return (
     <section>
@@ -23,6 +24,7 @@ const App = () => {
               <Route path="/Home" element={<Home/>} />
               <Route path="/About" element={<About/>} />
               <Route path="/Skills" element={<Skills/>} />
+              <Route path="Skills/ProgrammingLanguages" element={<ProgrammingLanguages/>} />
               <Route path='*' element={<Navigate to={"/"} />} />
             </Routes>
             </div>
