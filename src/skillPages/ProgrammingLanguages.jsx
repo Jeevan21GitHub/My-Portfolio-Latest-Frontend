@@ -5,8 +5,7 @@ const ProgrammingLanguages = () => {
   return (
     <section>
       <div>
-        <SkillBar />
-       
+        <SkillBar title={SkillCardData.programmingLanguages.title} skills={SkillCardData.programmingLanguages.skills}/>            
       </div>
     </section>
   );

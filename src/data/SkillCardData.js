@@ -24,52 +24,132 @@ export const SkillCardData={
     programmingLanguages:{
         title:"Programming Languages",
         skills:[
-            JavaImg,
-            Csharp
+            {
+                img:JavaImg,
+                name:"Java",
+                percentage:88
+            },
+            {
+                img:Csharp,
+                name:"C#",
+                percentage:80
+            }
         ],
     },
     frontend:{
         title:"Frontend",
         skills:[
-            HTML,
-            CSS,
-            Sass,
-            React,
-            JS,
-            Redux
+            {
+                img:HTML,
+                name:"HTML",
+                percentage:95
+            },
+            {
+                img:CSS,
+                name:"CSS",
+                percentage:90
+            },
+            {
+                img:Sass,
+                name:"Sass",
+                percentage:85
+            },
+            {
+                img:React,
+                name:"ReactJS",
+                percentage:90
+            },
+            {
+                img:JS,
+                name:"JavaScript",
+                percentage:90
+            },
+            {
+                img:Redux,
+                name:"Redux",
+                percentage:85
+            }
         ]
     },
     backend:{
         title:"Backend",
         skills:[
-            NodeJS,
-            Express
+            {
+                img:NodeJS,
+                name:"NodeJS",
+                percentage:80
+            },
+            {
+                img:Express,
+                name:"ExpressJS",
+                percentage:90
+            }
         ]
     },
     cssFrameworks:{
         title:"CSS Frameworks",
         skills:[
-            Bootstrap,
-            TailwindCSS
+            {
+                img:Bootstrap,
+                name:"Bootstrap",
+                percentage:85
+            },
+            {
+                img:TailwindCSS,
+                name:"TailwindCSS",
+                percentage:90
+            }
         ]
     },
     database:{
         title:"Database",
         skills:[
-            MySql,
-            Mongodb,
-            Firebase
+            {
+                img:MySql,
+                name:"MYSql",
+                percentage:80
+            },
+            {
+                img:Mongodb,
+                name:"MongoDB",
+                percentage:85
+            },
+            {
+                img:Firebase,
+                name:"FirebaseDB",
+                percentage:75
+            }
         ]
     },
     tools:{
         title:"Tools",
         skills:[
-            VSCode,
-            Git,
-            Eclipse,
-            IntelliJ,
-            Figma,
-            Docker
+            {
+                img:VSCode,
+                name:"VSCode",
+                percentage:88
+            },
+            {
+                img:Git,
+                name:"Git",
+                percentage:85
+            },
+            
+            {
+                img:IntelliJ,
+                name:"IntelliJ",
+                percentage:85
+            },
+            {
+                img:Figma,
+                name:"Figma",
+                percentage:80
+            },
+            {
+                img:Docker,
+                name:"Docker",
+                percentage:75
+            }
         ]
     },
    

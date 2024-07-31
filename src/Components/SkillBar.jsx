@@ -1,31 +1,31 @@
 import React from "react";
-import { SkillCardData } from "../data/SkillCardData";
-const SkillBar = () => {
+
+const SkillBar = ({title,skills}) => {
   return (
     <section>
       <div>
-        <h3 className="text-3xl mb-5 font-bold">
-          {SkillCardData.programmingLanguages.title}
+        <h3 className="text-3xl font-bold fixed z-10 overflow-hidden">
+          {title}
         </h3>
       </div>
-      <div>
-        {SkillCardData.programmingLanguages.skills.map((item, index) => (
-          <div className="border-2 border-gray-800 rounded-md w-[800px] p-1 shadow-md mb-3">
+      <div className="pt-16">
+        {skills.map((item, index) => (
+          <div className="border-2 border-gray-800 rounded-md w-[800px] p-1 shadow-md mb-4 hover:scale-105 duration-300 hover:bg-blue-100">
             <div>
               <div className="flex justify-between">
                 <div className="flex items-center mb-1">
                   <img
-                    src={SkillCardData.programmingLanguages.skills[0]}
+                    src={item.img}
                     alt=""
                   />
-                  <p className="ml-1 text-xl font-semibold">C#</p>
+                  <p className="ml-1 text-xl font-semibold">{item.name}</p>
                 </div>
                 <div>
-                  <p>88%</p>
+                  <p className="text-xl font-semibold">{item.percentage}%</p>
                 </div>
               </div>
               <div>
-                <p className="w-[688px] h-2 rounded-md bg-blue-400"></p>
+                <input type="range" min="1" max="100" value={item.percentage} className="w-full"/>
               </div>
             </div>
           </div>
