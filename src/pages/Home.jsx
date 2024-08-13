@@ -14,7 +14,9 @@ const Home = () => {
         </div>
         <div className="">
           <div>
-            <h2 className="text-4xl font-bold">SOFTWARE <br /> <span className="ml-12 text-white-shadow">DEVELOPER</span></h2>
+          <p className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 text-5xl text-gray-900 font-bold ">
+              Software Developer
+            </p>
             <p className="w-2 h-1 text-black"></p>
           </div>
           <div className="mt-5">
